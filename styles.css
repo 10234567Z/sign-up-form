@@ -215,7 +215,7 @@ input{
     border: 1px solid whitesmoke;
     border-radius: 5px;
     color: whitesmoke;
-    padding-left: 2px;
+    padding-left: 10px;
     transition: all 0.3s;
     height: 3vh;
 }
