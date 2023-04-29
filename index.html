@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <title>Sign-up-form</title>
 </head>
 
@@ -20,7 +21,7 @@
                     <h1>Abstergo</h1>
                 </div>
                 <div class="logo">
-                    <img src="Assets/icon.png" width="200px" height="200px">
+                    <img src="Assets/icon.png" width="200px" height="200px" draggable="false">
                 </div>
             </div>
             <div class="credits">
@@ -37,7 +38,34 @@
                 </em></div>
             <div class="signupForm">
                 <form action="" method="get">
-                    
+                    <div class="firstNameArea">
+                        <label for="firstName">First Name<br></label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="lastNameArea">
+                        <label for="lastName">Last Name<br></label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="emailArea">
+                        <label for="email">Email Address<br></label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="telArea">
+                        <label for="telephone">Phone<br></label>
+                        <input type="tel" id="telephone" maxlength="10" required>
+                    </div>
+                    <div class="initialPassArea">
+                        <label for="password">Password<br></label>
+                        <input type="password" id="password" minlength="8" required>
+                    </div>
+                    <div class="confirmPassArea">
+                        <label for="confirmPassword">Confirm Password<br></label>
+                        <input type="password" id="confirmPassword" minlength="8" required>
+                    </div>
+                    <div class="buttonSubmit">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <p>Already a member? <a href="#">Log in here</a></p>
                 </form>
             </div>
             <div class="blankArea"></div>
