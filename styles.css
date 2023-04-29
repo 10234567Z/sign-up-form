@@ -168,13 +168,34 @@ form{
 
 button{
     height: 100%;
-    width: 100%;
+    width: 75%;
+    border-radius: 10px;
+    outline: none !important;
+    border: 4px solid burlywood;
+    color: burlywood;
+    font-family: 'Kanit', sans-serif;
+    background-color: #131313;
+    font-size: 1rem;
+}
+
+:focus{
+    opacity: 0.9;
 }
 
 form > p {
-    grid-area: 4/3;
+    grid-area: 4/span 4;
     align-self: end;
     padding: 3px;
+    color: burlywood;
+}
+
+form > p > a{
+    color: red;
+    text-decoration: none;
+}
+
+form > p > a:hover{
+    color: burlywood;
 }
 
 form > div{
@@ -184,11 +205,31 @@ form > div{
 }
 
 input{
+    outline: none !important;
     width: 95%;
     background-color: #131313;
     border: 1px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding-left: 2px;
+    transition: all 0.3s;
+    height: 3vh;
 }
 
 .blankArea{
     order: 3;
+}
+
+input:focus:valid{
+    outline: none !important;
+    border: 1px solid burlywood;
+}
+
+input:focus:invalid{
+    outline: none !important;
+    border: 1px solid red;
+}
+
+label{
+    font-family: 'Kanit', sans-serif;
 }
